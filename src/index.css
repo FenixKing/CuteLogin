@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*, ::before, ::after{
+    content: "";
+    margin: 0;
+    padding: 0;
+    font-family: "roboto";
+    border: none;
+}
+
+body{
+    background-image: linear-gradient( rgb(141, 143, 250) , rgb(175, 180, 252));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh; 
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    width: 90vw;
+    height: 10vh;
+    background: rgb(202, 227, 241);
+    border-radius: 10px 10px 0 0;
+    padding-top: 2vh;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.menu{
+    margin-right: 80px;
+}
+
+.menu a{
+    color: black;
+    margin-right: 50px;
+    font-size: 12px;
+}
+.register{
+    padding-left: 100px;
+    position: relative;
+}
+.register  a{
+    margin-right: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(68, 68, 252);
+}
+.register  div{
+    margin-left: 100px;;
+    width: 20px;
+    height: 3px;
+    background-color: rgb(68, 68, 252);
+    position: absolute;
+    top: 30;
+    left: 10px;
+    border-radius: 80px;
+}
+
+.register button{
+    height: 40px;
+    width: 110px;
+    border-radius: 50px;
+    background: white;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.164);
+}
+
+main{
+    width: 90vw;
+    height: 80vh;
+    background: rgb(202, 227, 241);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+main .left-side{
+    display: flex;
+    flex-direction: column;
+}
+
+main .left-side .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 90vh;
+}
+
+main .left-side .image h1{
+    color: rgb(68, 68, 252);
+    margin-top: -300px;
+}
+
+main .left-side .image p{
+    width: 220px;
+    font-size: 13px;
+    color: rgb(151, 153, 163);
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: -165px;
+}
+
+main .left-side .image img{
+    position: absolute;
+    max-width: 450px;
+    max-height: 450px;
+    z-index: -1;
+    top:-10px;
+    left: 115px;
+}
+
+.store{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 50vw;
+}
+
+.apple-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 15vw;
+    height: 8vh;
+    border: 1px solid rgb(148, 145, 145);
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgb(202, 227, 241);
+}
+
+.apple-store img{
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: -20px;
+}
+
+.apple-store p{
+    font-size: 10px;
+    position: absolute;
+    left: 43%;
+    top: 10px;
+    color: black;
+}
+
+.apple-store h6 {
+    margin-top: 15px;
+    margin-left: 5px;
+    color: black;
+}
+
+
+.google-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 15vw;
+    height: 8vh;
+    border: 1px solid rgb(148, 145, 145);
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgb(202, 227, 241);
+    margin-left: 40px;
+}
+
+.google-store img{
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: -20px;
+}
+
+.google-store p{
+    font-size: 10px;
+    position: absolute;
+    left: 62px;
+    top: 10px;
+    left: 42.8%;
+}
+
+.google-store h6 {
+    margin-top: 15px;
+    margin-left: 8px;
+    color: black;
+}
+
+
+main .right-side{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 50vw;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 40vh;
+    padding: 30px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form input {
+    height: 38px;
+    width: 25vw;
+    border-radius:5px;
+    background: rgb(162, 208, 221);
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-left: 0px ;
+}
+
+.form div{
+    height: 35px;
+    width: 30vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form div input{
+    margin-top: 20px;
+}
+
+.form div button{
+    right: 60;
+    top: 18px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.form div img{
+    width: 20px;
+    height: 20px;
+}
+
+.check{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 11px;
+    margin-left: 0px;
+}
+
+.check input{
+    height: 15px;
+    width: 15px;
+    border-radius:7px;
+    margin-right: 10px;
+}
+
+.check label {
+    margin-top: 20px;
+    margin-right: 120px;
+}
+
+.check a {
+    margin-top: 20px;
+    color: black;
+    cursor: pointer;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.sign{
+    margin-top: -48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sign button{
+  width: 25vw;
+  height: 38px;
+  margin-left:  5px;  
+  margin-bottom: 30px;
+  border-radius: 7px;
+  background-color: rgb(68, 68, 252);
+  color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.164);
+}
+
+.sign div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.sign div div{
+    width: 70px;
+    height: 2px;
+    background-color: rgba(92, 174, 196, 0.822);
+    margin-left: -10px;
+}
+
+.sign p {
+    margin-right: 40px;
+    margin-left: 20px;
+    font-size: 12px;
+    color: rgb(92, 173, 196);
+}
+
+.logos{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 87px;
+    background: rgb(162, 208, 221);
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.logos a img{
+    width: 20px;
+    height: 20px;
+}
